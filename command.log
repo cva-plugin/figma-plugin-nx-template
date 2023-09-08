@@ -446,3 +446,54 @@ Done in 4.7s
 git add -A && git commit -m 'Add @cva/shared plain typescript library'
 
 >>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+[main 10cd0f7] Add @cva/shared plain typescript library
+ 15 files changed, 388 insertions(+), 113 deletions(-)
+ create mode 100644 libs/plugin/shared/.eslintrc.json
+ create mode 100644 libs/plugin/shared/README.md
+ create mode 100644 libs/plugin/shared/package.json
+ create mode 100644 libs/plugin/shared/project.json
+ create mode 100644 libs/plugin/shared/src/index.ts
+ create mode 100644 libs/plugin/shared/src/lib/plugin-shared.spec.ts
+ create mode 100644 libs/plugin/shared/src/lib/plugin-shared.ts
+ create mode 100644 libs/plugin/shared/tsconfig.json
+ create mode 100644 libs/plugin/shared/tsconfig.lib.json
+ create mode 100644 libs/plugin/shared/tsconfig.spec.json
+ create mode 100644 libs/plugin/shared/vite.config.ts
+
+
+
+# 2023-09-08 07:00
+pnpm exec nx g @nx/js:library 
+  --name plugin-main 
+  --unitTestRunner vitest 
+  --bundler vite 
+  --directory libs/plugin/main 
+  --importPath @cva/main 
+  --projectNameAndRootFormat as-provided 
+  --simpleName true 
+  --tags figma,plugin,lib,main 
+  --no-interactive
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>  NX  Generating @nx/js:library
+
+A custom environment was provided: undefined. You need to install it manually.
+CREATE libs/plugin/main/tsconfig.json
+CREATE libs/plugin/main/README.md
+CREATE libs/plugin/main/src/index.ts
+CREATE libs/plugin/main/src/lib/plugin-main.spec.ts
+CREATE libs/plugin/main/src/lib/plugin-main.ts
+CREATE libs/plugin/main/tsconfig.lib.json
+CREATE libs/plugin/main/package.json
+CREATE libs/plugin/main/project.json
+CREATE libs/plugin/main/vite.config.ts
+CREATE libs/plugin/main/tsconfig.spec.json
+CREATE libs/plugin/main/.eslintrc.json
+UPDATE tsconfig.base.json
+
+
+# 2023-09-08 07:00
+git add -A && git commit -m 'Add @cva/main for plugin''s main thread'
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>

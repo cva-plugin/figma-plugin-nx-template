@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@cva/main": ["libs/plugin/main/src/index.ts"],
       "@cva/shared": ["libs/plugin/shared/src/index.ts"],
       "@cva/ui": ["libs/plugin/ui/src/index.ts"]
     }
