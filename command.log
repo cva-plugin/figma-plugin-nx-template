@@ -370,3 +370,79 @@ UPDATE tsconfig.base.json
 git add -A && git commit -m 'Add @cva/ui Svelte component library'
 
 >>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+[main 08e4ace] Add @cva/ui Svelte component library
+ 13 files changed, 585 insertions(+), 1 deletion(-)
+ create mode 100644 libs/plugin/ui/.eslintrc.js
+ create mode 100644 libs/plugin/ui/package.json
+ create mode 100644 libs/plugin/ui/project.json
+ create mode 100644 libs/plugin/ui/src/index.ts
+ create mode 100644 libs/plugin/ui/svelte.config.cjs
+ create mode 100644 libs/plugin/ui/tsconfig.json
+ create mode 100644 libs/plugin/ui/tsconfig.lib.json
+ create mode 100644 libs/plugin/ui/tsconfig.spec.json
+ create mode 100644 libs/plugin/ui/vite.config.ts
+
+
+
+# 2023-09-08 07:00
+pnpm exec nx g @nx/js:library 
+  --name plugin-shared 
+  --unitTestRunner vitest 
+  --bundler vite 
+  --directory libs/plugin/shared 
+  --importPath @cva/shared 
+  --projectNameAndRootFormat as-provided 
+  --simpleName true 
+  --tags figma,plugin,lib,shared 
+  --no-interactive
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>  NX  Generating @nx/js:library
+
+A custom environment was provided: undefined. You need to install it manually.
+CREATE libs/plugin/shared/tsconfig.json
+CREATE libs/plugin/shared/README.md
+CREATE libs/plugin/shared/src/index.ts
+CREATE libs/plugin/shared/src/lib/plugin-shared.spec.ts
+CREATE libs/plugin/shared/src/lib/plugin-shared.ts
+CREATE libs/plugin/shared/tsconfig.lib.json
+CREATE libs/plugin/shared/package.json
+CREATE libs/plugin/shared/project.json
+UPDATE package.json
+CREATE libs/plugin/shared/vite.config.ts
+CREATE libs/plugin/shared/tsconfig.spec.json
+CREATE libs/plugin/shared/.eslintrc.json
+UPDATE tsconfig.base.json
+Progress: resolved 1, reused 0, downloaded 0, added 0
+ WARN  deprecated @vitest/coverage-c8@0.32.0: v8 coverage is moved to @vitest/coverage-v8 package
+ WARN  deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+ WARN  deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+ WARN  deprecated @types/sass@1.45.0: This is a stub types definition. sass provides its own type definitions, so you do not need this installed.
+Progress: resolved 937, reused 907, downloaded 0, added 0
+Progress: resolved 942, reused 912, downloaded 0, added 0
+Progress: resolved 944, reused 914, downloaded 0, added 0
+Packages: +25 -25
++++++++++++++++++++++++++-------------------------
+Progress: resolved 944, reused 914, downloaded 0, added 23
+Progress: resolved 944, reused 914, downloaded 0, added 25, done
+
+devDependencies:
+- @types/node 16.11.7
++ @types/node 18.7.1 (20.5.9 is available)
+
+ WARN  Issues with peer dependencies found
+.
+├─┬ @sveltejs/vite-plugin-svelte 1.0.1
+│ └── ✕ unmet peer vite@^3.0.0: found 4.3.9
+└─┬ svelte-check 2.10.2
+  └─┬ svelte-preprocess 4.10.7
+    └── ✕ unmet peer typescript@"^3.9.5 || ^4.0.0": found 5.1.6
+
+Done in 4.7s
+
+
+# 2023-09-08 07:00
+git add -A && git commit -m 'Add @cva/shared plain typescript library'
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
