@@ -1,0 +1,254 @@
+
+# 2023-09-08 06:57
+pnpx create-nx-workspace@latest     
+  --name cva     
+  --commit.name 'Saulo Vallory'     
+  --commit.email 'saulo@tokilabs.io'     
+  --ci github     
+  --packageManager pnpm     
+  --defaultBase main     
+  --nxCloud true     
+  --preset ts     
+  --no-interactive 
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+# 2023-09-08 06:59
+pnpx create-nx-workspace@latest     
+  --name cva     
+  --commit.name 'Saulo Vallory'     
+  --commit.email 'saulo@tokilabs.io'     
+  --ci github     
+  --packageManager pnpm     
+  --defaultBase main     
+  --nxCloud true     
+  --preset ts     
+  --no-interactive 
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+ >  NX   Let's create a new workspace [https://nx.dev/getting-started/intro]
+
+
+ >  NX   Creating your v16.8.1 workspace.
+
+   To make sure the command works reliably in all environments, and that the preset is applied correctly,
+   Nx will run "pnpm install" several times. Please wait.
+
+
+ >  NX   Distributed caching via Nx Cloud has been enabled
+
+   In addition to the caching, Nx Cloud provides config-free distributed execution,
+   UI for viewing complex runs and GitHub integration. Learn more at https://nx.app
+   
+   Your workspace is currently unclaimed. Run details from unclaimed workspaces can be viewed on cloud.nx.app by anyone
+   with the link. Claim your workspace at the following link to restrict access.
+   
+   https://cloud.nx.app/orgs/workspace-setup?accessToken=N2QzMzRhNGItNzAwMy00NDVjLTg2NWUtYzdhMTM0NjkxYmY1fHJlYWQtd3JpdGU=
+
+
+ 
+
+
+ >  NX   First time using Nx? Check out this interactive Nx tutorial.
+
+   https://nx.dev/getting-started/tutorials/integrated-repo-tutorial
+
+
+
+
+# 2023-09-08 06:59
+pnpm add -D @nxext/svelte typescript@5.1.6
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+Progress: resolved 0, reused 1, downloaded 0, added 0
+Progress: resolved 5, reused 5, downloaded 0, added 0
+ WARN  deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+Progress: resolved 95, reused 86, downloaded 0, added 0
+Progress: resolved 367, reused 358, downloaded 0, added 0
+Progress: resolved 368, reused 359, downloaded 0, added 0
+Progress: resolved 369, reused 359, downloaded 0, added 0
+Progress: resolved 382, reused 373, downloaded 0, added 0
+Progress: resolved 384, reused 375, downloaded 0, added 0
+Progress: resolved 390, reused 381, downloaded 0, added 0
+Progress: resolved 423, reused 414, downloaded 0, added 0
+Progress: resolved 443, reused 434, downloaded 0, added 0
+Progress: resolved 467, reused 457, downloaded 0, added 0
+Progress: resolved 491, reused 482, downloaded 0, added 0
+Progress: resolved 504, reused 495, downloaded 0, added 0
+Progress: resolved 509, reused 500, downloaded 0, added 0
+Progress: resolved 525, reused 516, downloaded 0, added 0
+Progress: resolved 559, reused 529, downloaded 0, added 0
+Progress: resolved 568, reused 538, downloaded 0, added 0
+Progress: resolved 570, reused 540, downloaded 0, added 0
+Packages: +186 -1
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+Progress: resolved 570, reused 540, downloaded 0, added 184
+Progress: resolved 570, reused 540, downloaded 0, added 186, done
+
+devDependencies:
++ @nxext/svelte 16.7.0
+- typescript 5.1.3
++ typescript 5.1.6 (5.2.2 is available)
+
+Done in 20.1s
+
+
+
+# 2023-09-08 07:00
+pnpm exec nx g @nxext/svelte:app 
+  --name cva-plugin 
+  --tags figma,plugin,app 
+  --unitTestRunner vitest 
+  --e2eTestRunner none 
+  --verbose
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>  NX  Generating @nxext/svelte:application
+
+A custom environment was provided: undefined. You need to install it manually.
+UPDATE .vscode/extensions.json
+CREATE jest.preset.js
+UPDATE nx.json
+CREATE jest.config.ts
+UPDATE package.json
+CREATE .eslintrc.json
+CREATE .eslintignore
+CREATE cva-plugin/project.json
+CREATE cva-plugin/index.html
+CREATE cva-plugin/package.json
+CREATE cva-plugin/public/favicon.png
+CREATE cva-plugin/public/global.css
+CREATE cva-plugin/src/App.svelte
+CREATE cva-plugin/src/main.ts
+CREATE cva-plugin/svelte.config.cjs
+CREATE cva-plugin/tsconfig.app.json
+CREATE cva-plugin/tsconfig.spec.json
+CREATE cva-plugin/tsconfig.json
+CREATE cva-plugin/vite.config.ts
+CREATE cva-plugin/.eslintrc.js
+Progress: resolved 1, reused 0, downloaded 0, added 0
+ WARN  deprecated @vitest/coverage-c8@0.32.0: v8 coverage is moved to @vitest/coverage-v8 package
+ WARN  deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+Progress: resolved 119, reused 119, downloaded 0, added 0
+Progress: resolved 145, reused 145, downloaded 0, added 0
+Progress: resolved 201, reused 201, downloaded 0, added 0
+Progress: resolved 432, reused 414, downloaded 0, added 0
+Progress: resolved 542, reused 533, downloaded 0, added 0
+ WARN  deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+Progress: resolved 659, reused 629, downloaded 0, added 0
+Progress: resolved 737, reused 707, downloaded 0, added 0
+ WARN  deprecated @types/sass@1.45.0: This is a stub types definition. sass provides its own type definitions, so you do not need this installed.
+Progress: resolved 864, reused 833, downloaded 0, added 0
+Progress: resolved 893, reused 863, downloaded 0, added 0
+Progress: resolved 906, reused 876, downloaded 0, added 0
+Progress: resolved 908, reused 878, downloaded 0, added 0
+Packages: +368 -29
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------
+Progress: resolved 910, reused 880, downloaded 0, added 43
+Progress: resolved 910, reused 880, downloaded 0, added 225
+Progress: resolved 910, reused 880, downloaded 0, added 368, done
+
+dependencies:
++ tslib 2.6.2
+
+devDependencies:
++ @nx/cypress 16.8.1
++ @nx/eslint-plugin 16.8.1
++ @nx/jest 16.8.1
++ @nx/linter 16.8.1
++ @nx/vite 16.8.1
++ @sveltejs/vite-plugin-svelte 1.0.1 (2.4.5 is available)
++ @testing-library/svelte 3.2.2 (4.0.3 is available)
++ @tsconfig/svelte 4.0.1 (5.0.2 is available)
++ @types/jest 29.4.0 (29.5.4 is available)
++ @types/node 16.11.7 (20.5.9 is available)
++ @typescript-eslint/eslint-plugin 5.60.1 (6.6.0 is available)
++ @typescript-eslint/parser 5.60.1 (6.6.0 is available)
++ @vitest/coverage-c8 0.32.0 (0.33.0 is available) deprecated
++ @vitest/ui 0.32.0 (0.34.3 is available)
++ cypress 13.0.0 (13.1.0 is available)
++ eslint 8.46.0 (8.48.0 is available)
++ eslint-config-prettier 8.1.0 (9.0.0 is available)
++ eslint-plugin-svelte3 4.0.0
++ jest 29.4.1 (29.6.4 is available)
++ jest-environment-jsdom 29.4.1 (29.6.4 is available)
++ jsdom 22.1.0
++ svelte 3.59.1 (4.2.0 is available)
++ svelte-check 2.10.2 (3.5.1 is available)
++ svelte-jester 2.3.2 (3.0.0 is available)
++ svelte-preprocess 5.0.3 (5.0.4 is available)
++ ts-jest 29.1.0 (29.1.1 is available)
++ ts-node 10.9.1
++ vite 4.3.9 (4.4.9 is available)
++ vitest 0.32.0 (0.34.3 is available)
+
+ WARN  Issues with peer dependencies found
+.
+├─┬ @sveltejs/vite-plugin-svelte 1.0.1
+│ └── ✕ unmet peer vite@^3.0.0: found 4.3.9
+└─┬ svelte-check 2.10.2
+  └─┬ svelte-preprocess 4.10.7
+    └── ✕ unmet peer typescript@"^3.9.5 || ^4.0.0": found 5.1.6
+
+Done in 14.4s
+
+
+
+# 2023-09-08 07:00
+pnpm exec nx g @nx/workspace:move 
+  --projectName cva-plugin 
+  --newProjectName cva-plugin 
+  --destination apps/plugin 
+  --importPath @cva/plugin 
+  --projectNameAndRootFormat as-provided 
+  --no-interactive
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>  NX  Generating @nx/workspace:move
+
+DELETE cva-plugin/project.json
+CREATE apps/plugin/.eslintrc.js
+DELETE cva-plugin/.eslintrc.js
+CREATE apps/plugin/index.html
+DELETE cva-plugin/index.html
+CREATE apps/plugin/package.json
+DELETE cva-plugin/package.json
+CREATE apps/plugin/public/favicon.png
+DELETE cva-plugin/public/favicon.png
+CREATE apps/plugin/public/global.css
+DELETE cva-plugin/public/global.css
+DELETE cva-plugin/public
+CREATE apps/plugin/src/App.svelte
+DELETE cva-plugin/src/App.svelte
+CREATE apps/plugin/src/main.ts
+DELETE cva-plugin/src/main.ts
+DELETE cva-plugin/src
+CREATE apps/plugin/svelte.config.cjs
+DELETE cva-plugin/svelte.config.cjs
+CREATE apps/plugin/tsconfig.app.json
+DELETE cva-plugin/tsconfig.app.json
+CREATE apps/plugin/tsconfig.json
+DELETE cva-plugin/tsconfig.json
+CREATE apps/plugin/tsconfig.spec.json
+DELETE cva-plugin/tsconfig.spec.json
+CREATE apps/plugin/vite.config.ts
+DELETE cva-plugin/vite.config.ts
+DELETE cva-plugin
+CREATE apps/plugin/project.json
+
+
+
+# 2023-09-08 07:00
+sed -i '' 's/server: {/server: {     fs: {       allow: [".."]     },/g' apps/plugin/vite.config.ts
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+# 2023-09-08 07:00
+git add -A && git commit -m 'Add Svelte app with Vite'
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
