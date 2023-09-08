@@ -497,3 +497,18 @@ UPDATE tsconfig.base.json
 git add -A && git commit -m 'Add @cva/main for plugin''s main thread'
 
 >>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+[main 2a512d4] Add @cva/main for plugins main thread
+ 13 files changed, 250 insertions(+)
+ create mode 100644 libs/plugin/main/.eslintrc.json
+ create mode 100644 libs/plugin/main/README.md
+ create mode 100644 libs/plugin/main/package.json
+ create mode 100644 libs/plugin/main/project.json
+ create mode 100644 libs/plugin/main/src/index.ts
+ create mode 100644 libs/plugin/main/src/lib/plugin-main.spec.ts
+ create mode 100644 libs/plugin/main/src/lib/plugin-main.ts
+ create mode 100644 libs/plugin/main/tsconfig.json
+ create mode 100644 libs/plugin/main/tsconfig.lib.json
+ create mode 100644 libs/plugin/main/tsconfig.spec.json
+ create mode 100644 libs/plugin/main/vite.config.ts
+
+
