@@ -1,0 +1,47 @@
+{
+  "name": "cva-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/plugin/ui/src",
+  "projectType": "library",
+  "tags": ["figma", "plugin", "lib", "ui", "components"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/plugin/ui/**/*.{ts,svelte,spec.ts}"]
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "svelte-check",
+        "cwd": "libs/plugin/ui"
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/libs/plugin/ui"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../../coverage/libs/plugin/ui"
+      }
+    }
+  }
+}

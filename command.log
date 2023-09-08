@@ -252,3 +252,121 @@ sed -i '' 's/server: {/server: {     fs: {       allow: [".."]     },/g' apps/pl
 git add -A && git commit -m 'Add Svelte app with Vite'
 
 >>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+[main b391bd7] Add Svelte app with Vite
+ 22 files changed, 6393 insertions(+), 793 deletions(-)
+ create mode 100644 .eslintignore
+ create mode 100644 .eslintrc.json
+ create mode 100644 apps/plugin/.eslintrc.js
+ create mode 100644 apps/plugin/index.html
+ create mode 100644 apps/plugin/package.json
+ create mode 100644 apps/plugin/project.json
+ create mode 100644 apps/plugin/public/favicon.png
+ create mode 100644 apps/plugin/public/global.css
+ create mode 100644 apps/plugin/src/App.svelte
+ create mode 100644 apps/plugin/src/main.ts
+ create mode 100644 apps/plugin/svelte.config.cjs
+ create mode 100644 apps/plugin/tsconfig.app.json
+ create mode 100644 apps/plugin/tsconfig.json
+ create mode 100644 apps/plugin/tsconfig.spec.json
+ create mode 100644 apps/plugin/vite.config.ts
+ create mode 100644 command.log
+ create mode 100644 jest.config.ts
+ create mode 100644 jest.preset.js
+
+
+
+# 2023-09-08 07:00
+pnpm exec nx g @nxext/svelte:library 
+  --name plugin-ui 
+  --buildable true 
+  --e2eTestRunner none 
+  --importPath @cva/ui 
+  --tags figma,plugin,lib,ui,components 
+  --no-interactive
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>  NX  Generating @nxext/svelte:library
+
+A custom environment was provided: undefined. You need to install it manually.
+CREATE plugin-ui/project.json
+CREATE plugin-ui/package.json
+CREATE plugin-ui/src/index.ts
+CREATE plugin-ui/svelte.config.cjs
+CREATE plugin-ui/tsconfig.lib.json
+CREATE plugin-ui/tsconfig.spec.json
+CREATE plugin-ui/tsconfig.json
+CREATE plugin-ui/.eslintrc.js
+UPDATE package.json
+CREATE plugin-ui/vite.config.ts
+UPDATE tsconfig.base.json
+Progress: resolved 1, reused 0, downloaded 0, added 0
+ WARN  deprecated @vitest/coverage-c8@0.32.0: v8 coverage is moved to @vitest/coverage-v8 package
+ WARN  deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+ WARN  deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+ WARN  deprecated @types/sass@1.45.0: This is a stub types definition. sass provides its own type definitions, so you do not need this installed.
+Progress: resolved 913, reused 883, downloaded 0, added 0
+Progress: resolved 914, reused 884, downloaded 0, added 0
+Progress: resolved 922, reused 892, downloaded 0, added 0
+Progress: resolved 932, reused 902, downloaded 0, added 0
+Progress: resolved 941, reused 911, downloaded 0, added 0
+Progress: resolved 944, reused 914, downloaded 0, added 0
+Packages: +34
+++++++++++++++++++++++++++++++++++
+Progress: resolved 944, reused 914, downloaded 0, added 34, done
+
+devDependencies:
++ vite-plugin-dts 2.3.0 (3.5.3 is available)
+
+ WARN  Issues with peer dependencies found
+.
+├─┬ @sveltejs/vite-plugin-svelte 1.0.1
+│ └── ✕ unmet peer vite@^3.0.0: found 4.3.9
+└─┬ svelte-check 2.10.2
+  └─┬ svelte-preprocess 4.10.7
+    └── ✕ unmet peer typescript@"^3.9.5 || ^4.0.0": found 5.1.6
+
+Done in 7.2s
+
+
+
+# 2023-09-08 07:00
+pnpm exec nx g @nx/workspace:move 
+  --projectName plugin-ui 
+  --newProjectName cva-ui 
+  --destination libs/plugin/ui 
+  --importPath @cva/ui 
+  --projectNameAndRootFormat as-provided 
+  --no-interactive
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+>  NX  Generating @nx/workspace:move
+
+DELETE plugin-ui/project.json
+CREATE libs/plugin/ui/.eslintrc.js
+DELETE plugin-ui/.eslintrc.js
+CREATE libs/plugin/ui/package.json
+DELETE plugin-ui/package.json
+CREATE libs/plugin/ui/src/index.ts
+DELETE plugin-ui/src/index.ts
+DELETE plugin-ui/src
+CREATE libs/plugin/ui/svelte.config.cjs
+DELETE plugin-ui/svelte.config.cjs
+CREATE libs/plugin/ui/tsconfig.json
+DELETE plugin-ui/tsconfig.json
+CREATE libs/plugin/ui/tsconfig.lib.json
+DELETE plugin-ui/tsconfig.lib.json
+CREATE libs/plugin/ui/tsconfig.spec.json
+DELETE plugin-ui/tsconfig.spec.json
+CREATE libs/plugin/ui/vite.config.ts
+DELETE plugin-ui/vite.config.ts
+DELETE plugin-ui
+CREATE libs/plugin/ui/project.json
+UPDATE tsconfig.base.json
+
+
+# 2023-09-08 07:00
+git add -A && git commit -m 'Add @cva/ui Svelte component library'
+
+>>>>>>>>>>>>>>> COMMAND OUTPUT >>>>>>>>>>>>>>>>>>>>>>>>>>
