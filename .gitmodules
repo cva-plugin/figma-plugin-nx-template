@@ -1,0 +1,6 @@
+[submodule "packages/figma-plugin-ds-svelte"]
+	path = packages/figma-plugin-ds-svelte
+	url = git@github.com:cva-plugin/figma-plugin-ds-svelte.git
+[submodule "packages/@tokilabs/figma-plugin-sdk"]
+	path = packages/@tokilabs/figma-plugin-sdk
+	url = git@github.com:tokilabs/figma-plugin-sdk.git

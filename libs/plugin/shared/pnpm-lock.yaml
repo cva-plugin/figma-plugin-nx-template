@@ -1,0 +1,16 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@figma/plugin-typings':
+    specifier: ^1.76.0
+    version: 1.76.0
+
+packages:
+
+  /@figma/plugin-typings@1.76.0:
+    resolution: {integrity: sha512-fGYPJJx9dIYf0X/ZaUjrNjhpmkv7XJzMj0C2GZjSje1wYfGWvddM07mXiS9NRQ+Ikrq0qim1bf6WZZmgL83ZEA==}
+    dev: true

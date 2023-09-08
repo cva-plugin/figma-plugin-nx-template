@@ -4,6 +4,7 @@
   "sourceRoot": "apps/plugin/src",
   "projectType": "application",
   "tags": ["figma", "plugin", "app"],
+  "implicitDependencies": ["plugin-shared"],
   "targets": {
     "lint": {
       "executor": "@nx/linter:eslint",

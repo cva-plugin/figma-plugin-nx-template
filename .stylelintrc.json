@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-html/html",
+    "stylelint-config-html/svelte"
+  ]
+}
